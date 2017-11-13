@@ -18,7 +18,7 @@ char *afsh_read_line(void)
     }
 
     while (1) {
-    // Read a character!
+        // Read a character!
         c = getchar();
 
         // If the char is EOF, replace it with null and return
@@ -126,7 +126,8 @@ int (*builtin_func[]) (char **) = {
     &afsh_exit
 };
 
-int afsh_num_builtins() {
+int afsh_num_builtins()
+{
     return sizeof(builtin_str) / sizeof(char *);
 }
 
